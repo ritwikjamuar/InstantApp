@@ -20,10 +20,16 @@ android {
 }
 
 dependencies {
+
+    /*
+     * Here, including application as 'app' is to tell that 'feature' and 'feature-two'
+     * will be assembled to 'app' in our installable app.
+     */
+
     application project(':app')
     feature project(':feature')
-    implementation 'com.android.support:appcompat-v7:25.+'
-
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     feature project(":feature-two")
+
+    implementation 'com.android.support:appcompat-v7:25.4.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
 }

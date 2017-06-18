@@ -1,7 +1,12 @@
 apply plugin: 'com.android.instantapp'
 
 dependencies {
-    implementation project(':feature')
-    implementation project(':feature-two')
-    implementation project(':base')
+
+    /*
+     * These implementations are used in instant app gradle script to include those modules in our instant app.
+     */
+
+    implementation project(':feature')      //Implementing feature
+    implementation project(':feature-two')  //Implementing feature-two
+    implementation project(':base')         //Implementing base
 }
